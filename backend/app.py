@@ -23,7 +23,7 @@ def chat():
     conversation_id = data.get("conversation_id")
 
     print(f"\n User: {message}")
-    print(f"🔍 Matching against {len(mock_products)} products...")
+    print(f" Matching against {len(mock_products)} products...")
 
     #  Basic keyword match
     matched_products = [
