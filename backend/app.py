@@ -12,7 +12,7 @@ try:
         mock_products = json.load(f)
         print(f"Loaded {len(mock_products)} products.")
 except Exception as e:
-    print("❌ Failed to load products.json:", e)
+    print("Failed to load products.json:", e)
     mock_products = []
 
 @app.route('/chat', methods=['POST'])
@@ -22,7 +22,7 @@ def chat():
     user_id = data.get("user_id")
     conversation_id = data.get("conversation_id")
 
-    print(f"\n📩 User: {message}")
+    print(f"\n User: {message}")
     print(f"🔍 Matching against {len(mock_products)} products...")
 
     #  Basic keyword match
