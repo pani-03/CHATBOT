@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "HP Pavilion 15 Laptop",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "https://via.placeholder.com/150?text=HP+Pavilion"
+  },
+  {
+    "id": 2,
+    "name": "Dell Inspiron 5502",
+    "price": 64999,
+    "rating": 4.1,
+    "image": "https://via.placeholder.com/150?text=Dell+Inspiron"
+  }
+]
