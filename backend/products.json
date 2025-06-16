@@ -1,16 +1,220 @@
 [
   {
     "id": 1,
-    "name": "HP Pavilion 15 Laptop",
+    "name": "HP Pavilion 15 Laptop Laptops",
     "price": 59999,
     "rating": 4.2,
-    "image": "https://via.placeholder.com/150?text=HP+Pavilion"
+    "image": "/static/hp.webp"
   },
   {
     "id": 2,
-    "name": "Dell Inspiron 5502",
+    "name": "Dell Inspiron 5502 Laptop Laptops",
     "price": 64999,
     "rating": 4.1,
-    "image": "https://via.placeholder.com/150?text=Dell+Inspiron"
+    "image": "/static/dell.webp"
+  },
+   {
+    "id": 3,
+    "name": "HP Intel Core i5 13th Gen Laptops Laptop",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/hp2.webp"
+  },
+  {
+    "id": 4,
+    "name": "Dell Inspiron 3530 Laptop Laptops",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/dell2.webp"
+  },
+
+  {
+    "id": 5,
+    "name": "Samsung Smartphones mobile",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/mobile1.webp"
+  },
+  
+  {
+    "id": 6,
+    "name": "Apple Iphone Smartphones mobile",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/mobile2.webp"
+  },
+   {
+    "id": 7,
+    "name": "Samsung Smartphones mobile",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/mobile3.webp"
+  },
+   {
+    "id": 8,
+    "name": "LG 7 Kg 5 Star Wind Jet Dry Semi-Automatic Top Loading Washing Machine",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/wm1.webp"
+  },
+  {
+    "id": 9,
+    "name": "Godrej 6 Kg Eco-Wash With Steam Wash Fully-Automatic Front Load Washing Machine ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/wm2.webp"
+  },
+  {
+    "id": 10,
+    "name": "OnePlus Pad Go Tablets ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/tab1.webp"
+  },
+    {
+    "id": 11,
+    "name": "Xiaomi Pad 7 |Qualcomm Snapdragon 7+ Gen 3 Tablets ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/tab2.webp"
+  },
+   {
+    "id": 12,
+    "name": "CELLBELL® C104 Medium-Back Mesh Office/Study Chair ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/f1.webp"
+  },
+  {
+    "id": 13,
+    "name": "Green Soul Vienna | Leatherette Office Chair  ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/f2.webp"
+  },
+
+  {
+    "id": 14,
+    "name": "Ease Brown Fabric 3 Seater Sofa ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/f3.webp"
+  },
+  {
+    "id": 15,
+    "name": "Eden Jade Green Fabric 3 Seater Sofa ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/f4.webp"
+  },
+
+  {
+    "id": 16,
+    "name": "boAt Rockerz 450 Pro Bluetooth On Ear Headphones ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/boat1.webp"
+  },
+  {
+    "id": 17,
+    "name": "boAt Rockerz 450, Bluetooth On Ear Headphones ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/boat2.webp"
+  },
+
+{
+    "id": 18,
+    "name": "red shirt ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/clothes1.webp"
+  },
+  {
+    "id": 19,
+    "name": "red shirt wavy ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/clothes2.webp"
+  },
+  {
+    "id": 20,
+    "name": "Black shirt wavy ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/clothes3.webp"
+  },
+
+  {
+    "id": 21,
+    "name": "Black shirt  ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/clothes4.webp"
+  },
+    {
+    "id": 22,
+    "name": "Noise Quad Call 1.81 Display, Bluetooth Calling Smart Watch, AI Voice Assistance, ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/w1.webp"
+  },
+    {
+    "id": 23,
+    "name": "Noise Quad Call 1.81 Display, Bluetooth Calling Smart Watch, AI Voice Assistance, ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/w2.webp"
+  },
+    {
+    "id": 24,
+    "name": "Apple iphone 16 Smartphones ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/mobile4.webp"
+  },
+    {
+    "id": 25,
+    "name": "Ruskin Bond: Great stories for children Books",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/books1.webp"
+  },
+    {
+    "id": 26,
+    "name": "Twisted love Ana Huang Books ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/books2.webp"
+  },
+    {
+    "id": 27,
+    "name": "Redmi 81.28 cm (32 inch) Smart Fire TV, Black, ELA5577IN, 2024",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/tv1.webp"
+  },
+    {
+    "id": 28,
+    "name": "OnePlus Y1 80 cm (32 inch) HD Ready LED Smart Android TV with Dolby Audio  (32HA0A00) ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/tv2.webp"
+  },
+    {
+    "id": 29,
+    "name": "Lymio Men Cargo || Men Cargo Pants || Men Cargo Pants Cotton || Cargos for Men  ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/paint1.webp"
+  },
+    {
+    "id": 30,
+    "name": "Lymio Loose Cargo for Men Pants ",
+    "price": 59999,
+    "rating": 4.2,
+    "image": "/static/pant2.webp"
   }
+
+  
 ]

@@ -18,31 +18,43 @@
     });
     const userId = 'user124'; // Replace with actual user ID logic
 
-    useEffect(() => {
-      const fetchChatHistory = async () => {
-        try {
-          const currentConversationId = conversations[selectedChatIndex]?.conversationId;
-          if (currentConversationId) {
-            const response = await axios.get(`http://localhost:5000/history?user_id=${userId}&conversation_id=${currentConversationId}`);
-            const data = response.data;
+   useEffect(() => {
+  const fetchChatHistory = async () => {
+    const currentConversationId = conversations[selectedChatIndex]?.conversationId;
+    if (!currentConversationId) return;
 
-            const formattedData = data.map(chat => ({
-              user: chat.user_message,
-              bot: chat.bot_response
-            }));
+    try {
+      const response = await axios.get(
+        `http://localhost:5000/history?user_id=${userId}&conversation_id=${currentConversationId}`
+      );
 
-            const updatedChats = [...chats];
-            updatedChats[selectedChatIndex] = formattedData;
-            setChats(updatedChats);
-            localStorage.setItem('chats', JSON.stringify(updatedChats)); // Store chats in localStorage
-          }
-        } catch (error) {
-          console.error("Error fetching chat history:", error);
-        }
-      };
+      const data = response.data;
 
-      fetchChatHistory();
-    }, [userId, conversations, selectedChatIndex]);
+      const formattedData = data.map(chat => ({
+        user: chat.user_message,
+        bot: chat.bot_response
+      }));
+
+      const updatedChats = [...chats];
+
+      // If current index is undefined, initialize it
+      if (!updatedChats[selectedChatIndex]) {
+        updatedChats[selectedChatIndex] = [];
+      }
+
+      // Only update if chat is empty
+      if (updatedChats[selectedChatIndex].length === 0) {
+        updatedChats[selectedChatIndex] = formattedData;
+        setChats(updatedChats);
+        localStorage.setItem('chats', JSON.stringify(updatedChats));
+      }
+    } catch (error) {
+      console.error("Error fetching chat history:", error);
+    }
+  };
+
+  fetchChatHistory();
+}, [selectedChatIndex, conversations]);
 
 const handleSendMessage = async (message) => {
     // console.log("Updated chat:", updatedChats[selectedChatIndex]);
@@ -170,10 +182,14 @@ const handleSendMessage = async (message) => {
           selectedChatIndex={selectedChatIndex}
         />
         <ChatWindow
-          chat={chats[selectedChatIndex] || []}
-          onSendMessage={handleSendMessage}
-          conversationId={conversations[selectedChatIndex]?.conversationId}
-        />
+  chat={chats[selectedChatIndex] || []}
+  onSendMessage={handleSendMessage}
+  conversationId={conversations[selectedChatIndex]?.conversationId}
+  onFirstMessage={() => {
+    if (conversations.length === 0) startNewConversation();
+  }}
+/>
+
       </div>
     );
   };

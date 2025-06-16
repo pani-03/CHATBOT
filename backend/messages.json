@@ -1,0 +1,30 @@
+[
+  {
+    "conversation_id": "1750097246.610998",
+    "user_id": "user124",
+    "user_message": "laptp",
+    "bot_response": "Sorry, no matching products found.",
+    "timestamp": "2025-06-16 18:07:30.744074+00:00"
+  },
+  {
+    "conversation_id": "1750097246.610998",
+    "user_id": "user124",
+    "user_message": "laptop",
+    "bot_response": "Here are 4 products matching your search.",
+    "timestamp": "2025-06-16 18:07:33.297284+00:00"
+  },
+  {
+    "conversation_id": "1750097246.610998",
+    "user_id": "user124",
+    "user_message": "sofa",
+    "bot_response": "Here are 2 products matching your search.",
+    "timestamp": "2025-06-16 18:07:39.354845+00:00"
+  },
+  {
+    "conversation_id": "1750097246.610998",
+    "user_id": "user124",
+    "user_message": "cargo",
+    "bot_response": "Here are 2 products matching your search.",
+    "timestamp": "2025-06-16 18:07:45.777212+00:00"
+  }
+]

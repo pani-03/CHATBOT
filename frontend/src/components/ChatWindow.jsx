@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-const ChatWindow = ({ chat = [], onSendMessage, conversationId }) => {
+const ChatWindow = ({ chat = [], onSendMessage, conversationId,  onFirstMessage }) => {
   const [message, setMessage] = useState('');
   const messagesEndRef = useRef(null);
 //   console.log("Product card data:", msg.products);
@@ -37,8 +37,10 @@ const ChatWindow = ({ chat = [], onSendMessage, conversationId }) => {
   return (
     <div className="chat-window flex flex-col flex-1 p-4">
       <div className="messages flex-grow mb-4 overflow-y-auto">
-        {chat.length === 0 ? (
-          <div className="text-center text-gray-200 font-bold">What can I help with?</div>
+        {!conversationId ? (
+  <div className="text-center text-gray-200 font-bold">Start a new chat…</div>
+) : chat.length === 0 ? (
+  <div className="text-center text-gray-200 font-bold">No messages yet. Say something!</div>
         ) : (
           chat.map((msg, index) => (
             <div key={index} className="message-pair">
@@ -63,10 +65,15 @@ const ChatWindow = ({ chat = [], onSendMessage, conversationId }) => {
       {msg.products.map((product, i) => (
         <div key={i} className="bg-white text-black p-3 rounded shadow-md max-w-md border">
           <img
-            src={product.image || "https://via.placeholder.com/150?text=No+Image"}
-            alt={product.name}
-            className="w-full h-32 object-contain mb-2"
-          />
+  src={
+    product.image
+      ? `http://localhost:5000${product.image}`
+      : "https://via.placeholder.com/150?text=No+Image"
+  }
+  alt={product.name}
+  className="w-full h-32 object-contain mb-2"
+/>
+
           <p><strong>{product.name || 'Unnamed Product'}</strong></p>
           <p>Price: ₹{product.price ?? 'N/A'}</p>
           <p>Rating: ⭐ {product.rating ?? 'N/A'}</p>
@@ -84,12 +91,18 @@ const ChatWindow = ({ chat = [], onSendMessage, conversationId }) => {
       </div>
       <form onSubmit={handleSubmit} className="flex-none flex">
         <input
-          type="text"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Type a message"
-          className="border p-2 flex-grow text-gray-800"
-        />
+  type="text"
+  value={message}
+  onChange={(e) => {
+    setMessage(e.target.value);
+    if (!conversationId && onFirstMessage) {
+      onFirstMessage(); // 🔥 trigger auto-start of conversation
+    }
+  }}
+  placeholder={!conversationId ? "Start a new chat..." : "Type a message"}
+  className="border p-2 flex-grow text-gray-800"
+/>
+
         <button type="submit" className="bg-[#ECDFCC] text-gray-800 p-2 ml-2">
           Send
         </button>
