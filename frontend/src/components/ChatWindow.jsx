@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 
 const ChatWindow = ({ chat = [], onSendMessage, conversationId,  onFirstMessage }) => {
   const [message, setMessage] = useState('');
@@ -67,7 +69,7 @@ const ChatWindow = ({ chat = [], onSendMessage, conversationId,  onFirstMessage 
           <img
   src={
     product.image
-      ? `http://localhost:5000${product.image}`
+      ? `${BACKEND_URL}${product.image}`
       : "https://via.placeholder.com/150?text=No+Image"
   }
   alt={product.name}

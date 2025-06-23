@@ -2,6 +2,7 @@
   import axios from 'axios';
   import ChatSidebar from './ChatSidebar';
   import ChatWindow from './ChatWindow';
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
   const ChatApp = () => {
     const [chats, setChats] = useState(() => {
@@ -25,7 +26,7 @@
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/history?user_id=${userId}&conversation_id=${currentConversationId}`
+        `${BACKEND_URL}/history?user_id=${userId}&conversation_id=${currentConversationId}`
       );
 
       const data = response.data;
@@ -78,7 +79,7 @@ const handleSendMessage = async (message) => {
   if (!currentConversationId) return;
 
   try {
-    const response = await axios.post('http://localhost:5000/chat', {
+    const response = await axios.post(`${BACKEND_URL}/chat`, {
       message,
       user_id: userId,
       conversation_id: currentConversationId
@@ -114,7 +115,7 @@ const handleSendMessage = async (message) => {
 
     const startNewConversation = async () => {
       try {
-          const response = await axios.post('http://localhost:5000/new_conversation', {
+          const response = await axios.post(`${BACKEND_URL}/new_conversation`, {
               user_id: userId
           });
           const newConversationId = response.data.conversation_id;  // Save the conversation ID
@@ -142,7 +143,7 @@ const handleSendMessage = async (message) => {
       }
 
       try {
-          await axios.delete(`http://localhost:5000/conversation`, {
+          await axios.delete(`${BACKEND_URL}/conversation`, {
               data: {
                   user_id: userId,
                   conversation_id: conversationId

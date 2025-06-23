@@ -1,30 +1,72 @@
 [
   {
-    "conversation_id": "1750097246.610998",
-    "user_id": "user124",
-    "user_message": "laptp",
-    "bot_response": "Sorry, no matching products found.",
-    "timestamp": "2025-06-16 18:07:30.744074+00:00"
-  },
-  {
-    "conversation_id": "1750097246.610998",
+    "conversation_id": "1750658149.458549",
     "user_id": "user124",
     "user_message": "laptop",
     "bot_response": "Here are 4 products matching your search.",
-    "timestamp": "2025-06-16 18:07:33.297284+00:00"
+    "timestamp": "2025-06-23 05:55:53.070146+00:00"
   },
   {
-    "conversation_id": "1750097246.610998",
+    "conversation_id": "1750658149.458549",
+    "user_id": "user124",
+    "user_message": "laptops",
+    "bot_response": "Here are 4 products matching your search.",
+    "timestamp": "2025-06-23 05:55:57.275012+00:00"
+  },
+  {
+    "conversation_id": "1750658149.458549",
+    "user_id": "user124",
+    "user_message": "phone",
+    "bot_response": "Here are 6 products matching your search.",
+    "timestamp": "2025-06-23 05:56:02.259382+00:00"
+  },
+  {
+    "conversation_id": "1750658149.458549",
+    "user_id": "user124",
+    "user_message": "phones",
+    "bot_response": "Here are 6 products matching your search.",
+    "timestamp": "2025-06-23 05:56:07.342447+00:00"
+  },
+  {
+    "conversation_id": "1750658149.458549",
+    "user_id": "user124",
+    "user_message": "mobiles",
+    "bot_response": "Sorry, no matching products found.",
+    "timestamp": "2025-06-23 05:56:11.724270+00:00"
+  },
+  {
+    "conversation_id": "1750658149.458549",
+    "user_id": "user124",
+    "user_message": "mobi;e",
+    "bot_response": "Sorry, no matching products found.",
+    "timestamp": "2025-06-23 05:56:16.168958+00:00"
+  },
+  {
+    "conversation_id": "1750658149.458549",
+    "user_id": "user124",
+    "user_message": "mobile",
+    "bot_response": "Here are 3 products matching your search.",
+    "timestamp": "2025-06-23 05:56:19.014956+00:00"
+  },
+  {
+    "conversation_id": "1750658149.458549",
+    "user_id": "user124",
+    "user_message": "table",
+    "bot_response": "Here are 2 products matching your search.",
+    "timestamp": "2025-06-23 05:56:25.658489+00:00"
+  },
+  {
+    "conversation_id": "1750658149.458549",
+    "user_id": "user124",
+    "user_message": "tab",
+    "bot_response": "Here are 2 products matching your search.",
+    "timestamp": "2025-06-23 05:56:29.237840+00:00"
+  },
+  {
+    "conversation_id": "1750658149.458549",
     "user_id": "user124",
     "user_message": "sofa",
     "bot_response": "Here are 2 products matching your search.",
-    "timestamp": "2025-06-16 18:07:39.354845+00:00"
-  },
-  {
-    "conversation_id": "1750097246.610998",
-    "user_id": "user124",
-    "user_message": "cargo",
-    "bot_response": "Here are 2 products matching your search.",
-    "timestamp": "2025-06-16 18:07:45.777212+00:00"
+    "timestamp": "2025-06-23 05:56:33.949473+00:00"
   }
 ]
