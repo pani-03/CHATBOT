@@ -164,16 +164,17 @@ npm run dev
 Make sure the backend runs on `localhost:5000` and frontend on `localhost:5173`
 
 Here is the deployed link of my project in Render: https://chatbot-frontend-jf4v.onrender.com
+PS: Directly log in, And Wait for some moments, as render requires a minimum of 20-30 seconds to set up the Backend of the Project 
  
 
 ## 📸 App Screenshot
 
 Here's a screenshot of the main UI:
 
-![Screenshot](frontend/assets/ss1.png)
-![Screenshot](frontend/assets/ss2.png)
-![Screenshot](frontend/assets/ss3.png)
-![Screenshot](frontend/assets/ss4.png)
+![Screenshot](frontend/src/assets/ss1.png)
+![Screenshot](frontend/src/assets/ss2.png)
+![Screenshot](frontend/src/assets/ss3.png)
+![Screenshot](frontend/src/assets/ss4.png)
 
 ---
 
