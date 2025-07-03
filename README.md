@@ -10,6 +10,11 @@ This project simulates a smart shopping assistant capable of responding to natur
 
 ---
 
+## 🎬 App Demo
+
+![Demo](frontend/src/assets/demo.gif)
+
+
 ## ⚙️ Tech Stack
 
 ### Frontend
