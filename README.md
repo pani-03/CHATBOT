@@ -163,6 +163,18 @@ npm run dev
 
 Make sure the backend runs on `localhost:5000` and frontend on `localhost:5173`
 
+Here is the deployed link of my project in Render: https://chatbot-frontend-jf4v.onrender.com
+ 
+
+## 📸 App Screenshot
+
+Here's a screenshot of the main UI:
+
+![Screenshot](frontend/assets/ss1.png)
+![Screenshot](frontend/assets/ss2.png)
+![Screenshot](frontend/assets/ss3.png)
+![Screenshot](frontend/assets/ss4.png)
+
 ---
 
 ## 👨‍💻 Author
